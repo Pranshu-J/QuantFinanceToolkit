@@ -21,10 +21,10 @@ def simulate_black_scholes(S0: float, mu: float, sigma: float, T: float, dt: flo
     return pd.DataFrame(price_path, index=time, columns=['Simulation'])
 
 # Example usage
-S0 = 100       # Initial stock price
-mu = 0.05      # Expected return
-sigma = 0.3    # Volatility
-T = 10         # 10 years
-dt = 0.5       # 6-month intervals
+S0 = 195.71       # Initial stock price
+mu = 0.0423   # Expected return
+sigma = 0.4011723735   # Volatility
+T = 1         # 10 years
+dt = 0.1       # intervals
 
 print(simulate_black_scholes(S0=S0, mu=mu, sigma=sigma, T=T, dt=dt))

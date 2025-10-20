@@ -90,21 +90,21 @@ class ExtendedBlackScholes:
 
 
 if __name__ == '__main__':
-    S0 = 100
-    sigma = 0.3
-    T = 10
-    dt = 0.5
-    K = 110
+    S0 = 195.71
+    sigma = 0.1754
+    T = 1/12
+    dt = 0.1
+    K = 200
 
     v0 = sigma**2
-    kappa = 3.0
-    theta = 0.09
-    xi = 0.5
-    rho = -0.6
+    kappa = 2.15
+    theta = 0.065
+    xi = 0.45
+    rho = -0.72
 
-    r0 = 0.02
-    a = 0.2
-    b = 0.04
+    r0 = 0.0423
+    a = 0.25
+    b = 0.035
     s = 0.015
 
     extended_model = ExtendedBlackScholes(
