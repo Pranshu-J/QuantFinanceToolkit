@@ -50,13 +50,13 @@ def monte_carlo_option_price(S0: float, K: float, T: float, r: float, sigma: flo
     return option_price
 
 S0 = 195.71          # Initial stock price
-sigma = 0.17524       # Volatility
+sigma = 2.99609626       # Volatility
 r = 0.0423             # Risk-free interest rate
 T = 1/12             # Time to expiration
 
 # Option Specific Parameters
-K = 200.00           # Strike Price
-n_simulations = 100000 # Number of paths to simulate for higher accuracy
+K = 90.00           # Strike Price
+n_simulations = 200000 # Number of paths to simulate for higher accuracy
 
 call_price = monte_carlo_option_price(S0=S0, K=K, T=T, r=r, sigma=sigma, n_simulations=n_simulations, option_type='call')
 put_price = monte_carlo_option_price(S0=S0, K=K, T=T, r=r, sigma=sigma, n_simulations=n_simulations, option_type='put')

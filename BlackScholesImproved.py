@@ -6,26 +6,7 @@ class ExtendedBlackScholes:
                  v0, kappa, theta, xi, rho,
                  r0, a, b, s,
                  num_simulations=10000):
-        """
-        Args:
-            S0 (float): Initial stock price.
-            K (float): Strike price of the option.
-            T (float): Time to maturity (in years).
-            dt (float): Time step size for the simulation.
-
-            v0 (float): Initial variance of the stock price.
-            kappa (float): Rate of mean reversion for variance.
-            theta (float): Long-term mean of variance.
-            xi (float): Volatility of variance ('vol of vol').
-            rho (float): Correlation between stock price and variance processes.
-
-            r0 (float): Initial risk-free interest rate.
-            a (float): Rate of mean reversion for interest rate.
-            b (float): Long-term mean of interest rate.
-            s (float): Volatility of interest rate.
-
-            num_simulations (int): Number of paths to simulate in Monte Carlo.
-        """
+       
 
         self.S0 = S0
         self.K = K
@@ -90,11 +71,33 @@ class ExtendedBlackScholes:
 
 
 if __name__ == '__main__':
+
+    """
+        Args:
+            S0 (float): Initial stock price.
+            K (float): Strike price of the option.
+            T (float): Time to maturity (in years).
+            dt (float): Time step size for the simulation.
+
+            v0 (float): Initial variance of the stock price.
+            kappa (float): Rate of mean reversion for variance.
+            theta (float): Long-term mean of variance.
+            xi (float): Volatility of variance ('vol of vol').
+            rho (float): Correlation between stock price and variance processes.
+
+            r0 (float): Initial risk-free interest rate.
+            a (float): Rate of mean reversion for interest rate.
+            b (float): Long-term mean of interest rate.
+            s (float): Volatility of interest rate.
+
+            num_simulations (int): Number of paths to simulate in Monte Carlo.
+        """
+     
     S0 = 195.71
-    sigma = 0.1754
+    sigma = 2.99609626
     T = 1/12
     dt = 0.1
-    K = 200
+    K = 90.00
 
     v0 = sigma**2
     kappa = 2.15
